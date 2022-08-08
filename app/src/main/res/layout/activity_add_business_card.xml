@@ -13,7 +13,9 @@
         android:background="?attr/actionBarItemBackground"
         android:src="@drawable/ic_close"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
     <TextView
         android:id="@+id/tv_title"
@@ -24,9 +26,9 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_close" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_nome"
@@ -124,9 +126,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_confirm"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="378dp"
+        android:layout_height="91dp"
         android:layout_margin="16dp"
+        android:layout_marginTop="64dp"
         android:text="@string/label_confirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
